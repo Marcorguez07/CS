@@ -21,3 +21,21 @@ list1 = [1,2,3,4]
 print(list1)
 list1.clear() # no acepta parametros, limpia todo.
 print(list1)
+
+# 3.) TYPE()
+
+# Type no es innecesaria, es muy útil, sin embargo necesito aprenderla, asi que la anotaré aquí
+
+# Type nos permite saber que tipo de cosa es algo, muy útil para filtrar.
+
+tuple1 = (1,2,3,"hola",True)
+numrandom = 0
+#imaginemos que queremos filtrar ints y sumarlas.
+
+for item in tuple1:
+    if type(item) is int:
+        numrandom = numrandom + item
+    else:
+        pass
+
+print(numrandom)
